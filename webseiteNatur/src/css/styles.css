@@ -1,0 +1,415 @@
+/* === Global === */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Raleway', 'Lato', 'Helvetica Neue', 'Arial', sans-serif;
+    font-size: 16px;
+}
+
+
+
+/* === Generelles === */
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.wichtiger-Text{
+    font-weight: bold;
+}
+
+.screenreader{
+    display: none;
+}
+
+.btn-type-1{
+    background-color: #A62C21;
+    border: 2px solid #A62C21;
+    color: #FFF;
+    padding: .4rem .6rem;
+}
+
+
+/* === Farben === */
+/*
+
+Blau        =   #1F4E8C
+Dunkel Grau =   #3D3F45
+Hell Grau   =   #E5E5E5
+Rot         =   #A62C21
+*/
+
+
+/* === Navigationsleiste === */
+
+#header-nav{
+    width: 100%;
+    height: 50px;
+    background-color: #3D3F45;
+    position: relative;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+#header-nav a > img{
+    height: 40px;
+    width: auto;
+    float: left;
+    margin: .25rem;
+}
+
+#header-nav ul{
+    margin: 0;
+    padding: 0;
+    float: right;
+    height: 100%;
+}
+
+#header-nav ul > li{
+    display: inline-block;
+    height: 100%;
+    padding: 0 .4rem 0 .4rem;
+}
+
+#header-nav ul > li > a:link{
+    color: #FFF;
+    text-decoration: none;
+}
+
+#header-nav  ul > li > a{
+    display: inline-block;
+    margin-top: .8rem;
+}
+
+#header-nav  ul > li > a:hover{
+    color: #E5E5E5;
+    text-decoration: none;
+}
+
+#header-nav  ul > li > a:active{
+    color: #E5E5E5;
+    text-decoration: none;
+}
+
+#header-nav  ul > li > a:visited{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.active{
+    background-color: #A62C21 !important;
+}
+
+#header-nav .col-6{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#header-nav .container,
+#header-nav .row,
+#header-nav .col-6{
+    height: 100%;
+}
+
+
+
+/* === Navigationsleiste Mobil === */
+
+#mobile-nav-button{
+    color: #E5E5E5;
+    float: right;
+    font-size: 2rem;
+    border: 2px solid #E5E5E5;
+    width: 37px;
+    height: 37px;
+    position: relative;
+    margin-top: .4rem;
+    margin-bottom: 7px;
+
+}
+
+#mobile-nav-button > span{
+    position: absolute;
+    bottom: -1.5px;
+    left: 7.5px;
+}
+
+#mobile-nav-content > ul > li{
+    display: block;
+    background-color: #3D3F45;
+    height: 50px;
+    padding: 0 1.2rem 0 1.2rem;
+    text-align: center;
+}
+
+
+#mobile-nav-dropdown{
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+
+#mobile-nav-content{
+    position: absolute;
+    right: 0;
+    top: 50px;
+    display: none;
+}
+
+#mobile-nav{
+    display: none;
+}
+
+#mobile-nav-dropdown:hover > #mobile-nav-content{
+    display: block;
+}
+
+@media(max-width: 768px){
+    #desktop-nav{
+        display: none;
+    }
+
+    #mobile-nav{
+        display: block;
+    }
+}
+
+/* === Header-Banner === */
+
+#header-banner{
+    width: 100%;
+    height: 0;
+    padding-top: 20.83%;
+    background: url("../img/hintergrundLandschaft.jpg") no-repeat center center;
+    background-size: contain;
+}
+
+#header-banner-small{
+    width: 100%;
+    height: 0;
+    padding-top: 15.625%;
+    background: url("../img/hintergrundLandschaft-klein.jpg") no-repeat center center;
+    background-size: contain;
+}
+
+
+
+/* === Newsletter Bereich === */
+
+#newsletter-berich{
+    width: 100%;
+    background-color: #3D3F45;
+}
+
+#nb-werbetext{
+    color: #FFF;
+    font-size: 1.2rem;
+}
+
+#nb-form{
+    margin-top: .7rem;
+    float: right;
+    width: 100%;
+    text-align: right;
+}
+
+#nb-email-input{
+    width: 78%;
+    height: 35px;
+    border: 2px solid #FFF;
+    padding: .4rem;
+}
+
+#nb-btn{
+    height: 35px;
+}
+
+@media(max-width: 1930px){
+    #nb-email-input{
+        width: 70%;
+    }
+}
+
+@media(max-width: 1436px){
+    #nb-email-input{
+        width: 100%;
+    }
+
+    #nb-btn{
+        width: 100%;
+        margin-top: 5px;
+    }
+}
+
+@media(max-width: 768px){
+    #nb-werbetext{
+        display: none;
+    }
+
+    #nb-form{
+        margin-top: 0;
+    }
+
+    #newsletter-berich .col-4{
+        display: none;
+    }
+}
+
+@media(max-width: 480px)
+{
+    #nb-email-input{
+        height: 25px;
+    }
+
+    #nb-btn{
+        height: 25px;
+        padding: .1rem;
+    }
+}
+
+/* === INFO Text === */
+#main_text
+{
+    margin-top: 0.5rem;
+}
+#main_text > .container > .row > .col-3 
+{
+    display: block;
+}
+
+#main_text > .container > .row > .col-1
+{
+    height: auto !important;
+}
+
+#main_text > .container > .row > .col-3 >  #bild
+{
+    background: rgb(255, 255, 255) url("C:/workspace/source/Prog_2020-2021_Schule/HTML/webseiteNatur/src/img/natur_3.jpg") no-repeat fixed right 0px top 50px;
+    height: 900px;   
+}
+
+#main_text > .container > .row > .col-1
+{
+    background-color: #adadad;
+    border:  0.05rem solid black;
+    text-align: center;
+}
+
+@media (max-width: 1424px)
+{
+    #main_text > .container > .row > .col-3
+    {
+        width: 100% !important;
+    }
+
+    #main_text > .container > .row > .col-1 
+    {
+        width: 33.333% !important;
+    }
+}
+
+@media (max-width: 786px)
+{
+    #main_text > .container > .row > .col-1 
+    {
+        width: 100% !important;
+    }
+}
+
+#main_text > .container > .row a:link
+{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+#main_text > .container > .row  a:hover
+{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+#main_text > .container > .row a:active
+{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+#main_text > .container > .row > .col-1 a:visited
+{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+/* === Impresum-Text === */
+
+#Impresum-Text > .container > .row > .col-6 > p
+{
+    background-color: #adadad;
+    border:  0.05rem solid black;
+    padding: 1rem;
+}
+/* === Grid-System === */
+
+.container{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+/*.row{
+    height: 600px;
+}*/
+
+[class*="col-"]{
+    float: left;
+    min-height: 1px;
+    height: 100px;
+    padding: .8rem;
+}
+
+.col-1{width: 16.666%;}
+.col-2{width: 33.333%;}
+.col-3{width: 50.000%;}
+.col-4{width: 66.666%;}
+.col-6{width: 100.00%;}
+
+
+@media (max-width: 1024px){
+
+    .col-1{width: 33.333%;}
+}
+
+@media (max-width: 768px){
+
+    .col-1{width: 50%;}
+    .col-2{width: 100%;}
+    .col-3{width: 100%;}
+    .col-4{width: 100%;}
+}
+
+@media (max-width: 480px){
+
+    .col-1{width: 100%;}
+    .col-2{width: 100%;}
+    .col-3{width: 100%;}
+    .col-4{width: 100%;}
+}
+
+@media (max-width: 768px){
+    #desktop-nav{display: none;}
+    #mobile-nav{display: block;}
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Startseite</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="src/css/styles.css" >
+        <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
+    </head>
+
+    <body>
+        
+<!-- === Navigationsleiste === -->
+
+        <nav id="header-nav">
+            <div  class="container" id="desktop-nav">
+                <div class="row">
+                    <div class="col-6">
+
+                        <a href="index.html">
+                            <img src="src/img/edelweiß.jpg" alt="Edelweiß Bild">
+                        </a>
+
+                        <ul>
+                            <li class="active"><a href="index.html">Startseite</a></li>
+                            <li><a href="naturProject.html">Project</a></li>
+                            <li><a href="source.html">Source</a></li>
+                            <li><a href="impresum.html">Impresum</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div class="container" id="mobile-nav">
+                <div class="row">
+                    <div class="col-6">
+                        <a href="index.html">
+                            <img src="src/img/edelweiß.jpg" alt="Edelweiß Bild">
+                        </a>
+
+                        <div class="clearfix" id="mobile-nav-dropdown">
+                            <div id="mobile-nav-button"><span> &equiv; </span></div>
+            
+                            <div class="clearfix" id="mobile-nav-content">
+                                <ul>
+                                    <li class="active"><a href="index.html">Startseite</a></li>
+                                    <li><a href="naturProject.html">Project</a></li>
+                                    <li><a href="source.html">Source</a></li>
+                                    <li><a href="impresum.html">Impresum</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+<!-- === Heade-Banner === -->
+
+        <header id="header-banner"></header>
+
+<!-- === Newsletter Bereich === -->
+        <section id="newsletter-berich">
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <p id="nb-werbetext"><span class="wichtiger-Text">Sign in now!</span> We send you a newsletter about interesting information about the natur and natur projekts.</p>
+                    </div>
+
+                    <div class="col-2 clearfix">
+                        <form action="index.html" method="POST" id="nb-form">
+                            <label class="screenreader" for="nb-email-input">E-Mail:</label>
+                            <input type="text" name="email" id="nb-email-input" placeholder="Your E-Mail Adresse" 
+                            pattern="(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\u0022(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*\u0022)@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])" title="Gib eine gültige E-Mail Adresse ein">
+                            <button type="submit" class="btn-type-1" id="nb-btn">Sign in!</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+<!-- === div.container>div.row>div.col-1*6^div.row>div.col-2*3^div.row>div.col-3*2^div.row>div.col-6 === -->
+
+        <div id="main_text">
+            <div class="container">
+                <div class="row">
+                    <div class="col-1">
+                        <div id="nature">
+                            <h3 id="ueberschrift">Nature</h3>
+                            <p>
+                                On this website we show you interesting facts about nature and the environment. You will find information about pollution of the environment 
+                                and some great and crazy ways how people are trying to stop destroying the nature. But first what is nature? Nature is everything 
+                                not made by humans. The opposite of nature is culture.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-1">
+                        <div id="projects">
+                            <h3 id="ueberschrift">Nature Projects</h3>
+                            <p>
+                                <a href="naturProject.html">Click me</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-1">
+                        <div id="nature_dis">
+                            <h3 id="ueberschrift">Nature disasters in Austria</h3>
+                            <p>
+                                Coming soon
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-3 clearfix">
+                        <div id="bild"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>
+
+<!--Alles was nicht von Menschen geschaffen wurde ist natur. 
+    Doch trotzdem sind werden manche Naturphänomene von Menschen 
+    beinflusst oder sogar Absichtlich herbeigerufen. Wie zum Beispiel 
+    künstlicher Regen. Ausserdem werden auch Naturkatastrophen durch 
+    den Menschen beschleunigt. Durch das bergradigen von natürlichen Flüssen 
+    kommt es immer wieder zu Überschwemmungen. Saubere Luft wird durch 
+    Luftverschmutzung immer seltener 
+-->

@@ -1,0 +1,237 @@
+/* === Parallax Effekt === */
+/*body, html, .container
+{
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.background1, .background2, .background3
+{
+    position: relative;
+    opacity: 0.6;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background1
+{
+    background-image: url('../img/banner1.png');
+    height: 100%;
+}
+
+.background2
+{
+    background-image: url('../img/banner2.png');
+    height: 350px;
+}
+
+.background3
+{
+    background-image: url('../img/banner3.png');
+    height: 350px;
+}
+
+.buttondiv
+{
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    text-align: center;
+}
+
+.button
+{
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid white;
+    color: white;
+    padding: 16px;
+    font-size: 22px;
+    letter-spacing: 8px;
+}
+
+.button:hover
+{
+    background-color: #232425;
+    transition: 1s;
+    opacity: 50%;
+}
+
+.heading
+{
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+}
+
+.welcome
+{
+    color: rgb(105, 105, 105);
+}
+
+.fixed
+{
+
+}*/
+
+/* === Parallax Effekt === */
+/*body, html, .container
+{
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.background1, .background2, .background3
+{
+    position: relative;
+    opacity: 0.6;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background1
+{
+    background-image: url('banner1.png');
+    height: 100%;
+}
+
+.background2
+{
+    background-image: url('banner2.png');
+    height: 350px;
+}
+
+.background3
+{
+    background-image: url('banner3.png');
+    height: 350px;
+}
+
+.buttondiv
+{
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    text-align: center;
+}
+
+.button
+{
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid white;
+    color: white;
+    padding: 16px;
+    font-size: 22px;
+    letter-spacing: 8px;
+}
+
+.button:hover
+{ 
+    background-color:;
+    transition: 1s;
+    opacity: 50%;
+}
+
+.heading
+{
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+}
+
+.welcome
+{
+    color: rgb(105, 105, 105);
+}*/
+
+body, html
+{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.slide{
+    width: 100vw;
+    height: 300vw;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 400vw;
+    height: 200vh;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+.one{
+    background: rgb(0, 255, 42);
+    /*background: url("banner1.png")  center;
+    background-size:  100vw 100vh;*/
+}
+
+.two{
+    background: rgb(76, 0, 255);
+    /*background: url("banner2.png")  center;
+    background-size:  100vw 100vh;*/
+}
+
+.three{
+    background: rgb(255, 0, 0) 100px 100px;
+    /*background: url("banner3.png")  center;
+    background-size:  100vw 100vh;*/
+}
+
+.four{
+    background: rgb(174, 0, 255);
+}
+
+.outer-wrapper{
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translatex(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+.textarea1{
+    /*width: 70vw;
+    height: 50vw;*/
+    width: 70vw;
+    height: auto;
+    max-height: 50vh;
+
+    padding: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(114, 114, 114, 0.5);
+}
+
+.textarea1:hover{
+    overflow: hidden;
+    overflow-y: scroll;
+}
